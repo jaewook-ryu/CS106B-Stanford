@@ -69,6 +69,15 @@ void drawSierpinskiTriangle(GWindow& gw, double x, double y, double size, int or
  */
 void drawTree(GWindow& gw, double x, double y, double size, int order) {
     // use a helper function
+
+    // draws square boundary
+    /*
+    gw.drawLine(x, y, x+size, y);
+    gw.drawLine(x+size, y, x+size, y+size);
+    gw.drawLine(x+size, y+size, x, y+size);
+    gw.drawLine(x, y+size, x, y);
+    */
+
     drawTreeHelper(gw, x, y, size, 0, 1, order);
 }
 
@@ -81,18 +90,25 @@ void drawTreeHelper(GWindow& gw, double x, double y, double size, double angle, 
         }
 
         // gets called first
-        gw.drawLine(size/2, size, size/2, size/2);
-        drawTreeHelper(gw, size/2, size/2, size/2, 0, currentOrder+1, order);
+        gw.drawLine(x+size/2, y+size, x+size/2, y+size/2);
+        drawTreeHelper(gw, x+size/2, y+size/2, size/4, 0, currentOrder+1, order);
     } else if(currentOrder > order){
         // if reached final order, do nothing
     } else{
-        if(currentOrder == order){
-            gw.setColor("#2e8b57");
-        }
+
         for(int i=0;i<7;i++){
+
+            if(currentOrder == order){
+                // if final order, color should be green.
+                gw.setColor("#2e8b57");
+            } else{
+                gw.setColor("#8b7765");
+            }
+
             int theta = 45 + (15*i) + angle;
             gw.drawPolarLine(x, y, size, theta);
-            drawTreeHelper(gw, x + size * cos(theta*M_PI/180), y - size * sin(theta*M_PI/180), size/2, (90 - theta), currentOrder+1, order);
+            //cout << gw.getColor() << " " << currentOrder << endl;
+            drawTreeHelper(gw, x + size * cos(theta*M_PI/180), y - size * sin(theta*M_PI/180), size/2, (theta-90), currentOrder+1, order);
         }
     }
 }
