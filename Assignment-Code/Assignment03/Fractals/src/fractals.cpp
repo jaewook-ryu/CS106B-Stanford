@@ -12,6 +12,8 @@
 
 using namespace std;
 
+void drawTreeHelper(GWindow &gw, double x, double y, double size, int currentOrder, int order);
+
 const int LEAF_COLOR = 0x2e8b57;   /* Color of all leaves of recursive tree (level 1) */
 const int BRANCH_COLOR = 0x8b7765; /* Color of all branches of recursive tree (level >=2) */
 
@@ -66,7 +68,33 @@ void drawSierpinskiTriangle(GWindow& gw, double x, double y, double size, int or
  * @param order - The order of the fractal.
  */
 void drawTree(GWindow& gw, double x, double y, double size, int order) {
-    // TODO: write this function
+    // use a helper function
+    drawTreeHelper(gw, x, y, size, 1, order);
+}
+
+void drawTreeHelper(GWindow& gw, double x, double y, double size, int currentOrder, int order){
+    if(currentOrder == 1){
+        if(order == currentOrder){
+            gw.setColor("#2e8b57");
+        } else{
+            gw.setColor("#8b7765");
+        }
+
+        // gets called first
+        gw.drawLine(size/2, size, size/2, size/2);
+        drawTreeHelper(gw, size/2, size/2, size/2, currentOrder+1, order);
+    } else if(currentOrder > order){
+        // if reached final order, do nothing
+    } else{
+        if(currentOrder == order){
+            gw.setColor("#2e8b57");
+        }
+        for(int i=0;i<7;i++){
+            int theta = 45 + (15*i);
+            gw.drawPolarLine(x, y, size, theta);
+            drawTreeHelper(gw, x + size * cos(theta), y - size * sin(theta), size/2, currentOrder+1, order);
+        }
+    }
 }
 
 /**
