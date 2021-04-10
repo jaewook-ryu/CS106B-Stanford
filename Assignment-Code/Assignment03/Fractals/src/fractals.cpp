@@ -29,6 +29,20 @@ const int BRANCH_COLOR = 0x8b7765; /* Color of all branches of recursive tree (l
  */
 void drawSierpinskiTriangle(GWindow& gw, double x, double y, double size, int order) {
     // TODO: write this function
+
+    if(order == 1){
+        // top edge
+        gw.drawLine(x, y, x+size, y);
+
+        // left edge
+        gw.drawLine(x, y, x+size/2, y+size);
+
+        // right edge
+        gw.drawLine(x+size/2, y+size, x+size, y);
+
+    } else{
+
+    }
 }
 
 /**
