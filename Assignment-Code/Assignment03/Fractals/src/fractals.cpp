@@ -35,12 +35,20 @@ void drawSierpinskiTriangle(GWindow& gw, double x, double y, double size, int or
         gw.drawLine(x, y, x+size, y);
 
         // left edge
-        gw.drawLine(x, y, x+size/2, y+size);
+        gw.drawLine(x, y, x+size/2, y+size*sqrt(3)/2);
 
         // right edge
-        gw.drawLine(x+size/2, y+size, x+size, y);
+        gw.drawLine(x+size/2, y+size*sqrt(3)/2, x+size, y);
 
     } else{
+        // Draw first triangle
+        drawSierpinskiTriangle(gw, x, y, size/2, order-1);
+
+        // Draw second triangle
+        drawSierpinskiTriangle(gw, x+size/2, y, size/2, order-1);
+
+        // Draw third triangle
+        drawSierpinskiTriangle(gw, x+size/4, y+size*sqrt(3)/4, size/2, order-1);
 
     }
 }
