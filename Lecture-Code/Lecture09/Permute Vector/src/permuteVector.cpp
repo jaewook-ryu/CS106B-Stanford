@@ -1,12 +1,13 @@
 #include <iostream>
 #include <string>
 #include "console.h"
+#include "set.h"
 #include "vector.h"  // for Vector
 using namespace std;
 
 
 void permuteVector(Vector<string> &v);
-void permuteVectorHelper(Vector<string> &v, Vector<string> &remaining);
+void permuteVectorHelper(Vector<string> &v, Vector<string> &chosen, Set<Vector<string> > &printed);
 
 int main() {
     cout << "Testing the permute function: " << endl;
@@ -22,16 +23,21 @@ int main() {
 
 void permuteVector(Vector<string>& v){
     Vector<string> chosen;
-    permuteVectorHelper(v, chosen);
+    Set<Vector<string>> printed;
+    permuteVectorHelper(v, chosen, printed);
 }
 
-void permuteVectorHelper(Vector<string>& v, Vector<string>& chosen){
+void permuteVectorHelper(Vector<string>& v, Vector<string>& chosen,
+                         Set<Vector<string>>& printed){
     // base case
 
     cout << "permute v = " <<  v << ", chosen= " << chosen << endl;
     cout << endl;
     if(v.isEmpty()){
-        cout << chosen << endl;
+        if(!printed.contains(chosen)){
+            cout << chosen << endl;
+            printed.add(chosen);
+        }
     } else{
         for(int i=0;i<v.size();i++){
             // choose
@@ -40,7 +46,7 @@ void permuteVectorHelper(Vector<string>& v, Vector<string>& chosen){
             v.remove(i);
 
             // explore
-            permuteVectorHelper(v, chosen);
+            permuteVectorHelper(v, chosen, printed);
 
             // unchoose
             int x = chosen.size();
