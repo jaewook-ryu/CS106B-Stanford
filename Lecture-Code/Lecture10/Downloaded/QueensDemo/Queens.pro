@@ -560,3 +560,6 @@ QMAKE_EXTRA_COMPILERS += copy_resource_files
 ###############################################################################
 
 # END OF FILE (this should be line #560; if not, your .pro has been changed!)
+
+SUBDIRS += \
+    ../../../../../qtmultimedia-opensource-src-5.4.0-rc/qtmultimedia.pro
