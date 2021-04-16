@@ -67,6 +67,7 @@ void solveQueensHelper(Board& board, int col){
                 //explore
                 solveQueensHelper(board, col+1);
 
+
                 //unchoose
                 board.remove(row, col);
             }
