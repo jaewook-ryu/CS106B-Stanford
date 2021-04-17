@@ -141,7 +141,9 @@ void mandelbrotSet(GWindow& gw, double minX, double incX,
     gw.add(&image);
     Grid<int> pixels = image.toGrid(); // Convert image to grid
 
-    // TODO: Put your Mandelbrot Set code here
+
+
+
 
     image.fromGrid(pixels); // Converts and puts the grid back into the image
 }
@@ -157,8 +159,18 @@ void mandelbrotSet(GWindow& gw, double minX, double incX,
  * @return number of iterations needed to determine if c is unbounded
  */
 int mandelbrotSetIterations(Complex c, int maxIterations) {
-    // TODO: Write this function
-    return 0; // Only here to make this compile
+
+    Complex z;
+    int iter;
+    iter = mandelbrotSetIterations(z, c, maxIterations);
+
+    if(iter == -1){
+        return maxIterations;
+    } else{
+        return iter;
+    }
+
+    return 0;
 }
 /**
  * An iteration of the Mandelbrot Set recursive formula with given values z and c, to
@@ -172,8 +184,14 @@ int mandelbrotSetIterations(Complex c, int maxIterations) {
  * @return number of iterations needed to determine if c is unbounded
  */
 int mandelbrotSetIterations(Complex z, Complex c, int remainingIterations) {
-    // TODO: write this function
-    return 0; // Only here to make this compile
+    if(remainingIterations == 0){
+        return -1;
+    } else if(z.abs() > 4 ){
+        return remainingIterations;
+    } else{
+        z = z*z + c;
+        mandelbrotSetIterations(z, c, remainingIterations-1);
+    }
 }
 
 // Helper function to set the palette

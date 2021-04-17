@@ -35,7 +35,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = Fractals1.0.0
-DISTDIR = /tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug/.tmp/Fractals1.0.0
+DISTDIR = /tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug/.tmp/Fractals1.0.0
 LINK          = g++
 LFLAGS        = -rdynamic -Wl,--export-dynamic
 LIBS          = $(SUBLIBS) -ldl -lQt5Gui -lQt5Core -lGL -lpthread 
@@ -545,22 +545,22 @@ distclean: clean
 ####### Sub-libraries
 
 copyResources:
-	cp -r "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/Fractals/res/colored-rectangles-icon.png" "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
-	 cp -r "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/Fractals/res/diff-icon.png" "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
-	 cp -r "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/Fractals/res/mandelbrot-icon.png" "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
-	 cp -r "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/Fractals/res/paint-palette-icon.png" "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
-	 cp -r "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/Fractals/res/paintbrush-icon.png" "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
-	 cp -r "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/Fractals/res/recycle-icon.png" "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
-	 cp -r "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/Fractals/res/tree-icon.png" "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
-	 cp -r "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/Fractals/res/triangle-icon-big.png" "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
-	 cp -r "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/Fractals/res/triangle-icon.png" "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
-	 cp -r "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/Fractals/lib/spl.jar" "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
+	cp -r "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/Fractals/res/colored-rectangles-icon.png" "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
+	 cp -r "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/Fractals/res/diff-icon.png" "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
+	 cp -r "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/Fractals/res/mandelbrot-icon.png" "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
+	 cp -r "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/Fractals/res/paint-palette-icon.png" "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
+	 cp -r "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/Fractals/res/paintbrush-icon.png" "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
+	 cp -r "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/Fractals/res/recycle-icon.png" "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
+	 cp -r "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/Fractals/res/tree-icon.png" "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
+	 cp -r "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/Fractals/res/triangle-icon-big.png" "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
+	 cp -r "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/Fractals/res/triangle-icon.png" "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
+	 cp -r "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/Fractals/lib/spl.jar" "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug" 
 	
 
 first: $(first) copydata
 
 copydata:
-	$(COPY_DIR) "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/Fractals/output" "/tmp/guest-vbuf9o/Desktop/CS106B_Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug"
+	$(COPY_DIR) "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/Fractals/output" "/tmp/guest-lilcyd/Desktop/CS106B-Stanford/Assignment-Code/Assignment03/build-Fractals-Desktop-Debug"
 
 mocclean: compiler_moc_header_clean compiler_moc_source_clean
 
