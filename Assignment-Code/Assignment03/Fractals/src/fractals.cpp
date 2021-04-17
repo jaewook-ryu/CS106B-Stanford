@@ -142,7 +142,19 @@ void mandelbrotSet(GWindow& gw, double minX, double incX,
     Grid<int> pixels = image.toGrid(); // Convert image to grid
 
 
+    cout << width << height << endl;
 
+    for(int i=0;i<width;i++){
+        for(int j=0;j<height;j++){
+            Complex coord = Complex(minX+i*incX, minY+j*incY);
+            int iter = mandelbrotSetIterations(coord, maxIterations);
+            cout << iter << endl;
+
+            if(iter == maxIterations){
+                pixels[j][i] = palette[iter % palette.size()];
+            }
+        }
+    }
 
 
     image.fromGrid(pixels); // Converts and puts the grid back into the image
