@@ -18,8 +18,8 @@
 
 using namespace std;
 
-
-
+// Rewrite after figuring this mess out.
+/*
 void grammarHelper(string& result, string symbol, Set<string>& leftSymbol,
                      Map<string, Vector<string>>& grammar){
 
@@ -75,6 +75,7 @@ void grammarHelper(string& result, string symbol, Set<string>& leftSymbol,
     }
 
 }
+*/
 
 /**
  * Generates grammar for a given symbol a certain number of times given
