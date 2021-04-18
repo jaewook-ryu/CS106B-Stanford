@@ -11,6 +11,7 @@
 #include "stdio.h"
 #include "strlib.h"
 #include "map.h"
+#include "set.h"
 #include "vector.h"
 #include <iostream>
 #include <fstream>
@@ -31,13 +32,25 @@ using namespace std;
 Vector<string> grammarGenerate(ifstream& input, string symbol, int times) {
     // Part 1: Read all of the inputs
     string line;
+
     Map<string, Vector<string>> grammar;
+    Set<string> symbols;
 
     while(getline(input, line)){
         Vector<string> lineSplit;
-        lineSplit = stringSplit(line, " ");
-        cout << lineSplit << endl;
+        lineSplit = stringSplit(line, "::=");
+
+        string key = lineSplit[0];
+        lineSplit.remove(0);
+
+        symbols.add(key);
+        grammar.add(key, lineSplit);
     }
+
+    cout << grammar << endl;
+    cout << symbols << endl;
+
+
 
     return {};           // This is only here so it will compile
 }
