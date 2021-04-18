@@ -26,7 +26,7 @@
 // function prototype declarations
 // (If you want to declare your own helper function prototypes, do that near
 //  the top of your .cpp file, not here.  You should NOT modify this file.)
-Vector<std::string> grammarGenerate(std::istream& input, std::string symbol, int times);
+Vector<std::string> grammarGenerate(std::ifstream &input, std::string symbol, int times);
 
 #endif
 

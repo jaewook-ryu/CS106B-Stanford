@@ -8,6 +8,13 @@
 
 #include "grammarsolver.h"
 
+#include "stdio.h"
+#include "strlib.h"
+#include "map.h"
+#include "vector.h"
+#include <iostream>
+#include <fstream>
+
 using namespace std;
 
 /**
@@ -21,8 +28,16 @@ using namespace std;
  * @param times - Number of times grammar is generated
  * @return Vector of strings of size times with random generations of symbol
  */
-Vector<string> grammarGenerate(istream& input, string symbol, int times) {
-    // TODO: write this function
+Vector<string> grammarGenerate(ifstream& input, string symbol, int times) {
+    // Part 1: Read all of the inputs
+    string line;
+    Map<string, Vector<string>> grammar;
+
+    while(getline(input, line)){
+        Vector<string> lineSplit;
+        lineSplit = stringSplit(line, " ");
+        cout << lineSplit << endl;
+    }
 
     return {};           // This is only here so it will compile
 }
