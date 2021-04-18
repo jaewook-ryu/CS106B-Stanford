@@ -19,30 +19,61 @@
 using namespace std;
 
 
-string grammarHelper(string result, string symbol, Set<string>& leftSymbol,
+
+void grammarHelper(string& result, string symbol, Set<string>& leftSymbol,
                      Map<string, Vector<string>>& grammar){
 
-    cout << symbol << endl;
+
+    cout << "Symbol: " << symbol << endl;
+    // determine if the rules to this symbol, modify symbol if it does not conform to rules
+    bool isNonter = leftSymbol.contains(symbol);
+
+    if(leftSymbol.contains(symbol)){
+        // do nothing;
+    } else{
+        bool isWithin;
+        Vector<string> splitSymbol = stringSplit(symbol, "|");
+        for(int i=0;i<splitSymbol.size();i++){
+            if(leftSymbol.contains(symbol)){
+                isWithin = true;
+            }
+        }
+
+        if(isWithin){
+            int randomChoice = randomInteger(0, splitSymbol.size()-1);
+            symbol = splitSymbol[randomChoice];
+        }
+    }
+    cout << "Symbol after mod: " << symbol << endl;
+
 
     if(leftSymbol.contains(symbol)){
         Vector<string> rule = grammar.get(symbol);
-        cout << "rule: " << rule << endl;
+        cout << "rules: " << rule << endl;
 
+        if(rule.size() == 1){
+            Vector<string> choices = stringSplit(rule[0], "|");
+            cout << "choices: " << choices << endl;
+            int randomChoice =randomInteger(0, choices.size()-1);
+            cout << choices[randomChoice] << endl;
+            cout << "result: " << result << endl;
+            result = result + " " + choices[randomChoice];
+            grammarHelper(result, choices[randomChoice], leftSymbol, grammar);
 
-        Vector<string> choices = stringSplit(rule[1], "|");
-        int randomChoice =randomInteger(0, choices.size());
+        } else{
 
-        cout << randomChoice << endl;
-        cout << choices[randomChoice] << endl;
+            for(int i=0;i<rule.size();i++){
+                int randomChoice = randomInteger(0, rule.size()-1);
+                cout << rule[randomChoice] << endl;
+                cout << "result: " << result << endl;
+                grammarHelper(result, rule[randomChoice], leftSymbol, grammar);
+            }
 
-        result += grammarHelper(result, choices[randomChoice], leftSymbol, grammar);
-
+        }
     } else{
-        // when this is a terminal symbol (base case)
-        return symbol;
+
     }
 
-    return "";
 }
 
 /**
@@ -89,6 +120,7 @@ Vector<string> grammarGenerate(ifstream& input, string symbol, int times) {
     for(int i=0;i<times;i++){
         string result = "";
         grammarHelper(result, symbol, leftSymbol, grammar);
+        cout << "result: " << result << endl;
         expansion.add(result);
     }
 
