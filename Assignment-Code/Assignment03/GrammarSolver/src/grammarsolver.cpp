@@ -12,23 +12,30 @@
 #include "map.h"
 #include "set.h"
 #include "vector.h"
+#include "random.h"
 #include <iostream>
 #include <fstream>
 
 using namespace std;
 
 
-string grammarHelper(string result, string symbol, Set<string>& leftSymbol, Map<string, string>& grammar){
+string grammarHelper(string result, string symbol, Set<string>& leftSymbol,
+                     Map<string, Vector<string>>& grammar){
 
     cout << symbol << endl;
 
     if(leftSymbol.contains(symbol)){
-        string rule = grammar.get(symbol);
-        Vector<string> rules = stringSplit(rule, " ");
+        Vector<string> rule = grammar.get(symbol);
+        cout << "rule: " << rule << endl;
 
-        for(int i=0;i<rules.size();i++){
-            grammarHelper(result, rules[i], leftSymbol, grammar);
-        }
+
+        Vector<string> choices = stringSplit(rule[1], "|");
+        int randomChoice =randomInteger(0, choices.size());
+
+        cout << randomChoice << endl;
+        cout << choices[randomChoice] << endl;
+
+        result += grammarHelper(result, choices[randomChoice], leftSymbol, grammar);
 
     } else{
         // when this is a terminal symbol (base case)
@@ -54,27 +61,33 @@ Vector<string> grammarGenerate(ifstream& input, string symbol, int times) {
     // Part 1: Read all of the inputs
 
     Vector<string> expansion;
-    Map<string, string> grammar;
+    Map<string, Vector<string>> grammar;
     Set<string> leftSymbol;
 
 
     string line;
     while(getline(input, line)){
         Vector<string> lineSplit;
+        Vector<string> ruleSplit;
+
         lineSplit = stringSplit(line, "::=");
+        ruleSplit = stringSplit(lineSplit[1], " ");
 
-        string key = lineSplit[0];
-        string val = lineSplit[1];
+        cout << ruleSplit << endl;
 
-        leftSymbol.add(key);
-        grammar.add(key, val);
+        if(leftSymbol.contains(lineSplit[0])){
+            throw("two lines for same non-terminal");
+        }
+
+        leftSymbol.add(lineSplit[0]);
+        grammar.add(lineSplit[0], ruleSplit);
     }
 
     //cout << grammar << endl;
     //cout << leftSymbol << endl;
 
     for(int i=0;i<times;i++){
-        string result;
+        string result = "";
         grammarHelper(result, symbol, leftSymbol, grammar);
         expansion.add(result);
     }
