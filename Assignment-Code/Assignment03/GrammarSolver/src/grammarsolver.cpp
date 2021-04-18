@@ -7,7 +7,6 @@
  */
 
 #include "grammarsolver.h"
-
 #include "stdio.h"
 #include "strlib.h"
 #include "map.h"
@@ -17,6 +16,27 @@
 #include <fstream>
 
 using namespace std;
+
+
+string grammarHelper(string result, string symbol, Set<string>& leftSymbol, Map<string, string>& grammar){
+
+    cout << symbol << endl;
+
+    if(leftSymbol.contains(symbol)){
+        string rule = grammar.get(symbol);
+        Vector<string> rules = stringSplit(rule, " ");
+
+        for(int i=0;i<rules.size();i++){
+            grammarHelper(result, rules[i], leftSymbol, grammar);
+        }
+
+    } else{
+        // when this is a terminal symbol (base case)
+        return symbol;
+    }
+
+    return "";
+}
 
 /**
  * Generates grammar for a given symbol a certain number of times given
@@ -29,28 +49,37 @@ using namespace std;
  * @param times - Number of times grammar is generated
  * @return Vector of strings of size times with random generations of symbol
  */
+
 Vector<string> grammarGenerate(ifstream& input, string symbol, int times) {
     // Part 1: Read all of the inputs
+
+    Vector<string> expansion;
+    Map<string, string> grammar;
+    Set<string> leftSymbol;
+
+
     string line;
-
-    Map<string, Vector<string>> grammar;
-    Set<string> symbols;
-
     while(getline(input, line)){
         Vector<string> lineSplit;
         lineSplit = stringSplit(line, "::=");
 
         string key = lineSplit[0];
-        lineSplit.remove(0);
+        string val = lineSplit[1];
 
-        symbols.add(key);
-        grammar.add(key, lineSplit);
+        leftSymbol.add(key);
+        grammar.add(key, val);
     }
 
-    cout << grammar << endl;
-    cout << symbols << endl;
+    //cout << grammar << endl;
+    //cout << leftSymbol << endl;
 
+    for(int i=0;i<times;i++){
+        string result;
+        grammarHelper(result, symbol, leftSymbol, grammar);
+        expansion.add(result);
+    }
 
-
-    return {};           // This is only here so it will compile
+    return expansion;           // This is only here so it will compile
 }
+
+
