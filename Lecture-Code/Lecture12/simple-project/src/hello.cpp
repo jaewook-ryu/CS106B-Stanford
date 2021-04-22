@@ -43,7 +43,11 @@ int main() {
     print(front);
     print(front);
 
-    /*
+    /* Note that when pointers are passed as arguments,
+     * the pointer is copied, so there is no need to
+     * make a copy of the pointer!
+     *
+     *
     ListNode* tempNode = front;
 
     while(tempNode != nullptr){
