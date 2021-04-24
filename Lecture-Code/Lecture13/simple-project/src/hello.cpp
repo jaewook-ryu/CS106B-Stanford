@@ -61,6 +61,14 @@ void addBack(ListNode*& front, int value){
 
 }
 
+void removeFront(ListNode*& front){
+    if(front == nullptr){
+        ListNode* temp = front;
+        front = front->next; // memory leak!!
+        delete temp; // frees up memory
+    }
+}
+
 void printList(ListNode* front){
     while(front != nullptr){
         cout << front->data << endl;
