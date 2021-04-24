@@ -62,7 +62,7 @@ void addBack(ListNode*& front, int value){
 }
 
 void removeFront(ListNode*& front){
-    if(front == nullptr){
+    if(front != nullptr){
         ListNode* temp = front;
         front = front->next; // memory leak!!
         delete temp; // frees up memory
