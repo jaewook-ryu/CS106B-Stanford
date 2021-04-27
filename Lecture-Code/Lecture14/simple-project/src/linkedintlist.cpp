@@ -2,9 +2,10 @@
 
 LinkedIntList::LinkedIntList()
 {
-
+    front = nullptr;
 }
 
-LinkedIntList::~LinkedIntList(){
-
+LinkedIntList::~LinkedIntList()
+{
+    // loop across the list to delete all nodes.
 }
