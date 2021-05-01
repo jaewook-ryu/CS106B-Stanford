@@ -33,4 +33,5 @@ public:
 
 private:
     Vector<Patient> pq;
+    int timeCounter = 0;
 };

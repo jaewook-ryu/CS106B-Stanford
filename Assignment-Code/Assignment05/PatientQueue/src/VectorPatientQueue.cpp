@@ -1,6 +1,7 @@
 // This is the CPP file you will edit and turn in. (TODO: Remove this comment!)
 
 #include "VectorPatientQueue.h"
+#include <sstream>
 
 VectorPatientQueue::VectorPatientQueue() {
     pq = new Vector<Patient>();
@@ -11,26 +12,45 @@ VectorPatientQueue::~VectorPatientQueue() {
 }
 
 void VectorPatientQueue::clear() {
-    pq.add();
+    pq.clear();
 }
 
 string VectorPatientQueue::frontName() {
-    // TODO: write this function
-    return "";   // this is only here so it will compile
+    int tempTimestamp = INT_FAST32_MAX;
+    int highestPriority = frontPriority();
+    int index;
+
+    for(int i=0;i<pq.size();i++){
+        if(pq[i].priority == highestPriority){
+            if(pq[i].timestamp < highestPriority){
+                highestPriority = pq[i].timestamp;
+                index = i;
+            }
+        }
+    }
+
+    return pq[index].name;
 }
 
 int VectorPatientQueue::frontPriority() {
-    // TODO: write this function
-    return 0;   // this is only here so it will compile
+    int tempPriority = INT_FAST32_MAX;
+
+    for(int i=0;i<pq.size();i++){
+        if(pq[i].priority < tempPriority){
+            tempPriority = pq[i].priority;
+        }
+    }
+
+    return tempPriority;
 }
 
 bool VectorPatientQueue::isEmpty() {
-    // TODO: write this function
-    return false;   // this is only here so it will compile
+    pq.isEmpty();
 }
 
 void VectorPatientQueue::newPatient(string name, int priority) {
-    // TODO: write this function
+    Patient temp = new Patient(name, priority, timeCounter++);
+    pq.add(temp);
 }
 
 string VectorPatientQueue::processPatient() {
@@ -43,6 +63,17 @@ void VectorPatientQueue::upgradePatient(string name, int newPriority) {
 }
 
 string VectorPatientQueue::toString() {
-    // TODO: write this function
-    return ""; // this is only here so it will compile
+    std::sstream s;
+
+    s << "{";
+    for(int i=0;i<pq.size();i++){
+        s << pq[i].priority << ":" << pq[i].name;
+
+        if(i != pq.size()-1){
+            s << ", ";
+        }
+    }
+    s << "}";
+
+    return s.str();
 }
