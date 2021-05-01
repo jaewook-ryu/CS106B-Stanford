@@ -16,33 +16,42 @@ void VectorPatientQueue::clear() {
 }
 
 string VectorPatientQueue::frontName() {
-    int tempTimestamp = INT_FAST32_MAX;
-    int highestPriority = frontPriority();
-    int index;
+    if(pq.isEmpty()){
+        throw "patient queue is empty";
+    } else{
+        int tempTimestamp = INT_FAST32_MAX;
+        int highestPriority = frontPriority();
+        int index;
 
-    for(int i=0;i<pq.size();i++){
-        if(pq[i].priority == highestPriority){
-            if(pq[i].timestamp < highestPriority){
-                highestPriority = pq[i].timestamp;
-                index = i;
+        for(int i=0;i<pq.size();i++){
+            if(pq[i].priority == highestPriority){
+                if(pq[i].timestamp < tempTimestamp){
+                    tempTimestamp = pq[i].timestamp;
+                    index = i;
+                }
             }
         }
-    }
 
-    return pq[index].name;
+        return pq[index].name;
+    }
 }
 
 int VectorPatientQueue::frontPriority() {
-    int tempPriority = INT_FAST32_MAX;
+    if(pq.isEmpty()){
+        throw "patient queue is empty";
+    } else{
+        int tempPriority = INT_FAST32_MAX;
 
-    for(int i=0;i<pq.size();i++){
-        if(pq[i].priority < tempPriority){
-            tempPriority = pq[i].priority;
+        for(int i=0;i<pq.size();i++){
+            if(pq[i].priority < tempPriority){
+                tempPriority = pq[i].priority;
+            }
         }
-    }
 
-    return tempPriority;
+        return tempPriority;
+    }
 }
+
 
 bool VectorPatientQueue::isEmpty() {
     pq.isEmpty();
@@ -54,12 +63,54 @@ void VectorPatientQueue::newPatient(string name, int priority) {
 }
 
 string VectorPatientQueue::processPatient() {
+    if(pq.isEmpty()){
+        throw "patient queue is empty";
+    } else{
+        string patientName = frontName();
+
+        // get index of lowest priority patient
+        int tempTimestamp = INT_FAST32_MAX;
+        int highestPriority = frontPriority();
+        int index;
+
+        for(int i=0;i<pq.size();i++){
+            if(pq[i].priority == highestPriority){
+                if(pq[i].timestamp < tempTimestamp){
+                    tempTimestamp = pq[i].timestamp;
+                    index = i;
+                }
+            }
+        }
+
+        // remove patient of highest priority.
+        pq.remove(index);
+
+        return patientName;
+    }
+
     // TODO: write this function
     return "";   // this is only here so it will compile
 }
 
 void VectorPatientQueue::upgradePatient(string name, int newPriority) {
-    // TODO: write this function
+    int tempTimestamp = INT_FAST32_MAX;.
+    int index;
+
+    for(int i=0;i<pq.size();i++){
+        if(pq[i].name == name){
+            if(pq[i].timestamp < tempTimestamp){
+                tempTimestamp = pq[i].timestamp;
+                index = i;
+            }
+        }
+    }
+
+    // check for exception
+    if(pq[index].priority < newPriority){
+        throw "patient already has higher priority";
+    } else{
+        pq[index].priority = newPriority;
+    }
 }
 
 string VectorPatientQueue::toString() {
