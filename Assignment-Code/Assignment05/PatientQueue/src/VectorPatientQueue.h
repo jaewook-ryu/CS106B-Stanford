@@ -15,7 +15,13 @@ public:
     int priority;
     int timestamp;
 
-    Patient(string name, int priority, int timestamp);
+    Patient(){}
+
+    Patient(string name, int priority, int timestamp){
+        this->name = name;
+        this->priority = priority;
+        this->timestamp = timestamp;
+    }
 };
 
 class VectorPatientQueue : public PatientQueue {
@@ -34,5 +40,4 @@ public:
 private:
     Vector<Patient> pq;
     int timeCounter = 0;
-    int getPriorityIndex();
 };

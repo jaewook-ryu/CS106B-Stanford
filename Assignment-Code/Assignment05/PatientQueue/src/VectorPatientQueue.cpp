@@ -4,11 +4,10 @@
 #include <sstream>
 
 VectorPatientQueue::VectorPatientQueue() {
-    pq = new Vector<Patient>();
 }
 
 VectorPatientQueue::~VectorPatientQueue() {
-    delete[] pq;
+    //DO NOTHING
 }
 
 void VectorPatientQueue::clear() {
@@ -19,7 +18,7 @@ string VectorPatientQueue::frontName() {
     if(pq.isEmpty()){
         throw "patient queue is empty";
     } else{
-        int tempTimestamp = INT_FAST32_MAX;
+        int tempTimestamp = INT_FAST8_MAX;
         int highestPriority = frontPriority();
         int index;
 
@@ -40,7 +39,7 @@ int VectorPatientQueue::frontPriority() {
     if(pq.isEmpty()){
         throw "patient queue is empty";
     } else{
-        int tempPriority = INT_FAST32_MAX;
+        int tempPriority = INT_FAST8_MAX;
 
         for(int i=0;i<pq.size();i++){
             if(pq[i].priority < tempPriority){
@@ -54,11 +53,11 @@ int VectorPatientQueue::frontPriority() {
 
 
 bool VectorPatientQueue::isEmpty() {
-    pq.isEmpty();
+    return pq.isEmpty();
 }
 
 void VectorPatientQueue::newPatient(string name, int priority) {
-    Patient temp = new Patient(name, priority, timeCounter++);
+    Patient temp(name, priority, timeCounter++);
     pq.add(temp);
 }
 
@@ -69,7 +68,7 @@ string VectorPatientQueue::processPatient() {
         string patientName = frontName();
 
         // get index of lowest priority patient
-        int tempTimestamp = INT_FAST32_MAX;
+        int tempTimestamp = INT_FAST8_MAX;
         int highestPriority = frontPriority();
         int index;
 
@@ -93,7 +92,7 @@ string VectorPatientQueue::processPatient() {
 }
 
 void VectorPatientQueue::upgradePatient(string name, int newPriority) {
-    int tempTimestamp = INT_FAST32_MAX;.
+    int tempTimestamp = INT_FAST8_MAX;
     int index;
 
     for(int i=0;i<pq.size();i++){
@@ -114,7 +113,7 @@ void VectorPatientQueue::upgradePatient(string name, int newPriority) {
 }
 
 string VectorPatientQueue::toString() {
-    std::sstream s;
+    stringstream s;
 
     s << "{";
     for(int i=0;i<pq.size();i++){

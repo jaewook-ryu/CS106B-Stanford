@@ -35,7 +35,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = PatientQueue1.0.0
-DISTDIR = /tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/build-PatientQueue-Desktop-Debug/.tmp/PatientQueue1.0.0
+DISTDIR = /tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/build-PatientQueue-Desktop-Debug/.tmp/PatientQueue1.0.0
 LINK          = g++
 LFLAGS        = -rdynamic -Wl,--export-dynamic
 LIBS          = $(SUBLIBS) -ldl -lpthread 
@@ -223,88 +223,88 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exceptions.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
-		../PatientQueue/PatientQueue.pro /tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/basicgraph.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/collections.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/dawglexicon.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/deque.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/graph.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/grid.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/hashcode.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/hashmap.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/hashset.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/lexicon.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/linkedhashmap.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/linkedhashset.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/linkedlist.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/map.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/pqueue.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/priorityqueue.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/queue.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/set.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/shuffle.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/sparsegrid.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/stack.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/stl.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/vector.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gbufferedimage.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gevents.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gfilechooser.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/ginteractors.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gobjects.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/goptionpane.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gtable.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gtextarea.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gtimer.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gtypes.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gwindow.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/base64.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/bitstream.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/console.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/filelib.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/plainconsole.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/server.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/simpio.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/tokenscanner.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/urlstream.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/consolestreambuf.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/echoinputstreambuf.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/foreachpatch.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/forwardingstreambuf.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/init.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/limitoutputstreambuf.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/platform.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/randompatch.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/static.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/tokenpatch.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/tplatform.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/version.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/system/call_stack.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/system/error.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/system/exceptions.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/system/process.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/system/pstream.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/system/stack_exception.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/system/thread.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/bigfloat.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/biginteger.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/complex.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/direction.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/foreach.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/gmath.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/note.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/observable.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/point.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/random.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/recursion.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/regexpr.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/sound.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/strlib.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/timer.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/src/HeapPatientQueue.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/src/LinkedListPatientQueue.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/src/patientnode.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/src/patientqueue.h \
-		/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/src/VectorPatientQueue.h ../PatientQueue/lib/StanfordCPPLib/collections/basicgraph.cpp \
+		../PatientQueue/PatientQueue.pro /tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/basicgraph.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/collections.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/dawglexicon.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/deque.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/graph.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/grid.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/hashcode.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/hashmap.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/hashset.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/lexicon.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/linkedhashmap.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/linkedhashset.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/linkedlist.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/map.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/pqueue.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/priorityqueue.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/queue.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/set.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/shuffle.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/sparsegrid.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/stack.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/stl.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/collections/vector.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gbufferedimage.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gevents.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gfilechooser.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/ginteractors.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gobjects.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/goptionpane.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gtable.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gtextarea.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gtimer.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gtypes.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/graphics/gwindow.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/base64.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/bitstream.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/console.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/filelib.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/plainconsole.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/server.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/simpio.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/tokenscanner.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/io/urlstream.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/consolestreambuf.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/echoinputstreambuf.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/foreachpatch.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/forwardingstreambuf.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/init.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/limitoutputstreambuf.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/platform.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/randompatch.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/static.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/tokenpatch.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/tplatform.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/private/version.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/system/call_stack.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/system/error.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/system/exceptions.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/system/process.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/system/pstream.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/system/stack_exception.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/system/thread.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/bigfloat.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/biginteger.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/complex.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/direction.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/foreach.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/gmath.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/note.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/observable.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/point.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/random.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/recursion.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/regexpr.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/sound.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/strlib.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/StanfordCPPLib/util/timer.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/src/HeapPatientQueue.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/src/LinkedListPatientQueue.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/src/patientnode.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/src/patientqueue.h \
+		/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/src/VectorPatientQueue.h ../PatientQueue/lib/StanfordCPPLib/collections/basicgraph.cpp \
 		../PatientQueue/lib/StanfordCPPLib/collections/dawglexicon.cpp \
 		../PatientQueue/lib/StanfordCPPLib/collections/hashcode.cpp \
 		../PatientQueue/lib/StanfordCPPLib/collections/lexicon.cpp \
@@ -535,14 +535,14 @@ distclean: clean
 ####### Sub-libraries
 
 copyResources:
-	cp -rf "/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/spl.jar" "/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/build-PatientQueue-Desktop-Debug" 
+	cp -rf "/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/lib/spl.jar" "/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/build-PatientQueue-Desktop-Debug" 
 	
 	
 
 first: $(first) copydata
 
 copydata:
-	$(COPY_DIR) "/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/output" "/tmp/guest-bcxsj8/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/build-PatientQueue-Desktop-Debug"
+	$(COPY_DIR) "/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/PatientQueue/output" "/tmp/guest-ckyh0n/Desktop/CS106B-Stanford/Assignment-Code/Assignment05/build-PatientQueue-Desktop-Debug"
 
 check: first
 
@@ -1310,6 +1310,15 @@ patientnode.o: ../PatientQueue/src/patientnode.cpp ../PatientQueue/src/patientno
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o patientnode.o ../PatientQueue/src/patientnode.cpp
 
 VectorPatientQueue.o: ../PatientQueue/src/VectorPatientQueue.cpp ../PatientQueue/src/VectorPatientQueue.h \
+		../PatientQueue/lib/StanfordCPPLib/collections/vector.h \
+		../PatientQueue/lib/StanfordCPPLib/collections/collections.h \
+		../PatientQueue/lib/StanfordCPPLib/system/error.h \
+		../PatientQueue/lib/StanfordCPPLib/private/init.h \
+		../PatientQueue/lib/StanfordCPPLib/util/gmath.h \
+		../PatientQueue/lib/StanfordCPPLib/graphics/gtypes.h \
+		../PatientQueue/lib/StanfordCPPLib/collections/hashcode.h \
+		../PatientQueue/lib/StanfordCPPLib/util/random.h \
+		../PatientQueue/lib/StanfordCPPLib/util/strlib.h \
 		../PatientQueue/src/patientqueue.h \
 		../PatientQueue/src/patientnode.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o VectorPatientQueue.o ../PatientQueue/src/VectorPatientQueue.cpp
