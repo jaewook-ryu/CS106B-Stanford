@@ -3,15 +3,15 @@
 #include "VectorPatientQueue.h"
 
 VectorPatientQueue::VectorPatientQueue() {
-    // TODO: write this constructor
+    pq = new Vector<Patient>();
 }
 
 VectorPatientQueue::~VectorPatientQueue() {
-    // TODO: write this destructor
+    delete[] pq;
 }
 
 void VectorPatientQueue::clear() {
-    // TODO: write this function
+    pq.add();
 }
 
 string VectorPatientQueue::frontName() {
