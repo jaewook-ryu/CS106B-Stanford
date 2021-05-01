@@ -1,48 +1,111 @@
 // This is the CPP file you will edit and turn in. (TODO: Remove this comment!)
 
 #include "LinkedListPatientQueue.h"
+#include <sstream>
 
 LinkedListPatientQueue::LinkedListPatientQueue() {
-    // TODO: write this constructor
+    front = nullptr;
 }
 
 LinkedListPatientQueue::~LinkedListPatientQueue() {
-    // TODO: write this destructor
+    PatientNode* temp = front;
+
+    while(temp != nullptr){
+        PatientNode* current = temp;
+        delete(current);
+
+        temp = temp->next;
+    }
 }
 
 void LinkedListPatientQueue::clear() {
-    // TODO: write this function
+    while(front != nullptr){
+        PatientNode *temp = front;
+        front = front->next;
+        delete(temp);
+    }
 }
 
 string LinkedListPatientQueue::frontName() {
-    // TODO: write this function
-    return "";   // this is only here so it will compile
+    if(isEmpty()){
+        throw "Patient Queue is Empty!";
+    } else{
+        return front->name;
+    }
 }
 
 int LinkedListPatientQueue::frontPriority() {
-    // TODO: write this function
-    return 0;   // this is only here so it will compile
+    if(isEmpty()){
+        throw "Patient Queue is Empty!";
+    } else{
+        return front->priority;
+    }
 }
 
 bool LinkedListPatientQueue::isEmpty() {
-    // TODO: write this function
-    return false;   // this is only here so it will compile
+    return (front == nullptr);
 }
 
 void LinkedListPatientQueue::newPatient(string name, int priority) {
-    // TODO: write this function
+    PatientNode *temp = new PatientNode(name, priority, nullptr);
+
+    // no element in list
+    if(front == nullptr){
+        front = temp;
+    } else{
+        PatientNode *index = front;
+
+
+    }
 }
 
 string LinkedListPatientQueue::processPatient() {
-    // TODO: write this function
-    return "";   // this is only here so it will compile
+    if(front == nullptr){
+        throw "PatientQueue is empty.";
+    } else{
+        PatientNode *temp = front;
+        string name = temp->name;
+
+        front = front->next;
+        delete(temp);
+
+        return name;
+    }
 }
 
 void LinkedListPatientQueue::upgradePatient(string name, int newPriority) {
-    // TODO: write this function
+    PatientNode *temp = front;
+
+    while(temp != nullptr){
+        if(temp->name == name){
+            temp->priority = newPriority;
+            break;
+        }
+
+        temp = temp->next;
+    }
+
+    // if no such patient is found
+    if(temp == nullptr){
+        throw "No such patient exists";
+    }
 }
 
 string LinkedListPatientQueue::toString() {
-    // TODO: write this function
-    return ""; // this is only here so it will compile
+    PatientNode *temp = front;
+    stringstream s;
+
+    s << "{";
+    while(temp != nullptr){
+        s << temp->priority << ":" << temp->name;
+
+        if(temp->next != nullptr){
+            s << ", ";
+        }
+
+        temp = temp->next;
+    }
+    s << "}";
+
+    return s.str(); // this is only here so it will compile
 }

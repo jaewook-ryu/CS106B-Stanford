@@ -93,7 +93,7 @@ string VectorPatientQueue::processPatient() {
 
 void VectorPatientQueue::upgradePatient(string name, int newPriority) {
     int tempTimestamp = INT_FAST8_MAX;
-    int index;
+    int index = -1;
 
     for(int i=0;i<pq.size();i++){
         if(pq[i].name == name){
@@ -102,6 +102,11 @@ void VectorPatientQueue::upgradePatient(string name, int newPriority) {
                 index = i;
             }
         }
+    }
+
+    // if there is no such patient, throw an exception
+    if(index == -1){
+        throw "No such Patient Exists";
     }
 
     // check for exception
