@@ -55,7 +55,19 @@ void LinkedListPatientQueue::newPatient(string name, int priority) {
     } else{
         PatientNode *index = front;
 
+        while(index != nullptr){
+            if(index->priority <= priority &&
+                    (index->next == nullptr || index->next->priority > priority)){
+                break;
+            } else{
+                index = index->next;
+            }
+        }
 
+
+        // insert new node next to index.
+        temp->next = index->next;
+        index->next = temp;
     }
 }
 
