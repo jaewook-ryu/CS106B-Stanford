@@ -9,8 +9,25 @@
 #include "patientqueue.h"
 using namespace std;
 
+
+
 class HeapPatientQueue : public PatientQueue  {
 public:
+
+    struct Patient{
+    public:
+        string name;
+        int priority;
+
+        Patient(){}
+
+        Patient(string name, int priority){
+            this->name = name;
+            this->priority = priority;
+        }
+
+    };
+
     HeapPatientQueue();
     ~HeapPatientQueue();
     string frontName();
@@ -23,6 +40,10 @@ public:
     string toString();
 
 private:
-    // TODO: add specified member variable(s)
-    // TODO: add any member functions necessary
+    int capacity = 10;
+    int size;
+    Patient *pq;
+
+    void resize();
+    int comparePatient(Patient p1, Patient p2);
 };
