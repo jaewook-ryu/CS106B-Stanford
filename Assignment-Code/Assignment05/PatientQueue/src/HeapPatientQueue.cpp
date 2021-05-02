@@ -4,9 +4,11 @@
 #include "HeapPatientQueue.h"
 #include "strlib.h"
 #include <sstream>
+#include <iostream>
 
 HeapPatientQueue::HeapPatientQueue() {
-    // Do nothing
+    pq = new Patient[capacity];
+    size = 0;
 }
 
 HeapPatientQueue::~HeapPatientQueue() {
@@ -16,7 +18,9 @@ HeapPatientQueue::~HeapPatientQueue() {
 // private member function to resize pq
 void HeapPatientQueue::resize(){
     int tempCap = capacity * 2;
-    Patient pqTemp[tempCap];
+
+    Patient *pqTemp;
+    pqTemp = new Patient[capacity];
 
     for(int i=1;i<capacity;i++){
         pqTemp[i] = pq[i];
@@ -42,10 +46,11 @@ int HeapPatientQueue::comparePatient(Patient p1, Patient p2){
     }
 }
 
-
 void HeapPatientQueue::clear() {
     delete[] pq;
+
     pq = new Patient[capacity];
+    size = 0;
 }
 
 string HeapPatientQueue::frontName() {
@@ -80,14 +85,16 @@ void HeapPatientQueue::newPatient(string name, int priority) {
     // Now percolate the patient up....
     int index = size + 1;
     while(index > 1){
-        if(comparePatient(newPatient, pq[index]) > 0){
+        if(comparePatient(newPatient, pq[index/2]) > 0){
             // tempPatient needs to come first: swap.
             Patient tempPatient = newPatient;
-            newPatient = pq[index];
-            pq[index] = tempPatient;
+            newPatient = pq[index/2];
+            pq[index/2] = tempPatient;
 
             // assign current value of index
             index = index/2;
+        } else{
+            break;
         }
     }
 
@@ -108,7 +115,7 @@ string HeapPatientQueue::toString() {
     stringstream s;
 
     s << "{";
-    for(int i=0;i<size+1;i++){
+    for(int i=1;i<size+1;i++){
         s << pq[i].priority << ":" << pq[i].name;
 
         if(i != size){
