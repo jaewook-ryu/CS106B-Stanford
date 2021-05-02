@@ -3,9 +3,10 @@
 
 #include "HeapPatientQueue.h"
 #include "strlib.h"
+#include <sstream>
 
 HeapPatientQueue::HeapPatientQueue() {
-    pq = new Patient[capacity];
+    // Do nothing
 }
 
 HeapPatientQueue::~HeapPatientQueue() {
@@ -78,7 +79,7 @@ void HeapPatientQueue::newPatient(string name, int priority) {
 
     // Now percolate the patient up....
     int index = size + 1;
-    while(index >= 1){
+    while(index > 1){
         if(comparePatient(newPatient, pq[index]) > 0){
             // tempPatient needs to come first: swap.
             Patient tempPatient = newPatient;
@@ -90,6 +91,8 @@ void HeapPatientQueue::newPatient(string name, int priority) {
         }
     }
 
+    pq[index] = newPatient;
+    size++;
 }
 
 string HeapPatientQueue::processPatient() {
@@ -102,6 +105,19 @@ void HeapPatientQueue::upgradePatient(string name, int newPriority) {
 }
 
 string HeapPatientQueue::toString() {
-    // TODO: write this function
-    return ""; // this is only here so it will compile
+    stringstream s;
+
+    s << "{";
+    for(int i=0;i<size+1;i++){
+        s << pq[i].priority << ":" << pq[i].name;
+
+        if(i != size){
+            s << ", ";
+        }
+    }
+    s << "}";
+
+    return s.str();
+
+    return s.str();
 }
