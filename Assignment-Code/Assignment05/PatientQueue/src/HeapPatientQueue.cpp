@@ -20,7 +20,7 @@ void HeapPatientQueue::resize(){
     int tempCap = capacity * 2;
 
     Patient *pqTemp;
-    pqTemp = new Patient[capacity];
+    pqTemp = new Patient[tempCap];
 
     for(int i=1;i<capacity;i++){
         pqTemp[i] = pq[i];
@@ -84,11 +84,88 @@ void HeapPatientQueue::newPatient(string name, int priority) {
 
     // Now percolate the patient up....
     int index = size + 1;
+    pq[index] = newPatient;
+    size++;
+
     while(index > 1){
-        if(comparePatient(newPatient, pq[index/2]) > 0){
+        if(comparePatient(pq[index], pq[index/2]) > 0){
             // tempPatient needs to come first: swap.
-            Patient tempPatient = newPatient;
-            newPatient = pq[index/2];
+            Patient tempPatient = pq[index];
+            pq[index] = pq[index/2];
+            pq[index/2] = tempPatient;
+
+            // assign current value of index
+            index = index/2;
+        } else{
+            break;
+        }
+    }
+}
+
+string HeapPatientQueue::processPatient() {
+    string tempName = frontName();
+
+    pq[1] = pq[size];
+
+    delete pq[size]; // delete last element
+    size--; // decrement size after deletion.
+
+    // now percolate pq[1] down.
+    int index = 1;
+    int swapIndex;
+
+    while(index <= size/2){
+        if(comparePatient(pq[index*2], pq[index]) > 0){
+            swapIndex = index*2;
+        } else if(index*2 + 1 <= size && comparePatient(pq[index*2+1], pq[index]) > 0){
+            swapIndex = index*2+1;
+        } else{
+            // in the right place
+            break;
+        }
+
+        // swap with index
+        Patient temp = pq[swapIndex];
+        pq[swapIndex] = pq[index];
+        pq[index] = temp;
+
+        index = index*2;
+    }
+
+    return tempName;   // this is only here so it will compile
+}
+
+void HeapPatientQueue::upgradePatient(string name, int newPriority) {
+    int tempPriority = INT_FAST8_MAX;
+    int indexPatient = -1;
+
+    for(int i=1;i<size+1;i++){
+        if(pq[i].name == name){
+            if(pq[i].priority < tempPriority){
+                indexPatient = i;
+            }
+        }
+    }
+
+    if(indexPatient == -1){
+        throw "Patient not on queue";
+    }
+
+    if(newPriority >= pq[indexPatient].priority){
+        throw "Patient already has higher priority";
+    }
+
+    // update the priority
+    pq[indexPatient].priority = newPriority;
+
+    // now we need to percolate this patient up if needed.
+    int index = indexPatient;
+
+    while(index > 1){
+        if(comparePatient(pq[index], pq[index/2]) > 0){
+            // tempPatient needs to come first: swap.
+            Patient tempPatient = pq[index];
+            pq[index] = pq[index/2];
             pq[index/2] = tempPatient;
 
             // assign current value of index
@@ -98,17 +175,7 @@ void HeapPatientQueue::newPatient(string name, int priority) {
         }
     }
 
-    pq[index] = newPatient;
-    size++;
-}
 
-string HeapPatientQueue::processPatient() {
-    // TODO: write this function
-    return "";   // this is only here so it will compile
-}
-
-void HeapPatientQueue::upgradePatient(string name, int newPriority) {
-    // TODO: write this function
 }
 
 string HeapPatientQueue::toString() {
