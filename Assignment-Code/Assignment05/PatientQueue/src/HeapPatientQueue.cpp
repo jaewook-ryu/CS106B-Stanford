@@ -107,7 +107,6 @@ string HeapPatientQueue::processPatient() {
 
     pq[1] = pq[size];
 
-    delete pq[size]; // delete last element
     size--; // decrement size after deletion.
 
     // now percolate pq[1] down.
