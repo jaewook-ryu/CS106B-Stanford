@@ -4,16 +4,43 @@
 // TODO: remove this comment header
 
 #include "encoding.h"
+#include <iostream>
+#include "pqueue.h"
+using namespace std;
 // TODO: include any other headers you need
+
 
 Map<int, int> buildFrequencyTable(istream& input) {
     // TODO: implement this function
-    Map<int, int> freqTable;   // this is just a placeholder so it will compile
-    return freqTable;          // this is just a placeholder so it will compile
+    Map<int, int> freqTable;
+
+    int c;
+    while((c = input.get()) != EOF){
+        freqTable[c]++;
+    }
+
+    // add this for EOF (once per file)
+    freqTable[PSEUDO_EOF]++;
+
+    return freqTable;
 }
 
 HuffmanNode* buildEncodingTree(const Map<int, int>& freqTable) {
-    // TODO: implement this function
+    // Priority queue to store our node structs
+    PriorityQueue<HuffmanNode*> pq;
+
+    // Construct pq by traversing our freqTable
+    for(int c: freqTable.keys()){
+        HuffmanNode *tempNode = new HuffmanNode(c, freqTable[c], NULL, NULL);
+        pq.enqueue(tempNode, freqTable[c]);
+    }
+
+    cout << pq << endl;
+
+
+
+
+
     return NULL;   // this is just a placeholder so it will compile
 }
 
