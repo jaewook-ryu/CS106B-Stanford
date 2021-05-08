@@ -105,7 +105,7 @@ void encodeData(istream& input, const Map<int, string>& encodingMap, obitstream&
 
     // add code for EOF
     encode = encodingMap[PSEUDO_EOF];
-    cout << encode;
+
     for(int i=0;i<encode.length();i++){
         output.writeBit(stringToInteger(encode.substr(i, 1)));
     }
@@ -114,11 +114,44 @@ void encodeData(istream& input, const Map<int, string>& encodingMap, obitstream&
 void decodeData(ibitstream& input, HuffmanNode* encodingTree, ostream& output) {
     // Read file character by character
     int c;
-    string  = "";
-    while((c = input.readBit()) != -1){
+    HuffmanNode* temp;
+    temp = encodingTree;
 
+    string tempString = "";
+
+    while(true){
+        if(temp->isLeaf()){
+            // leaf: we found the character.
+            // Add if character is not the EOF character.
+
+            if(temp->character != PSEUDO_EOF){
+                output << char(temp->character);
+                temp = encodingTree;
+
+                cout << tempString << endl;
+                tempString = "";
+            } else{
+                break;
+            }
+
+        } else{
+            // Read in next chacter
+            c = input.readBit();
+
+            // not a leaf: we need to traverse further.
+            if(c == 1){
+                temp = temp->one;
+                tempString += "1";
+            } else if (c == 0){
+                temp = temp->zero;
+                tempString += "0";
+            } else if (c == -1){
+                break;
+            } else{
+                throw "Invalid File";
+            }
+        }
     }
-
 }
 
 void compress(istream& input, obitstream& output) {
