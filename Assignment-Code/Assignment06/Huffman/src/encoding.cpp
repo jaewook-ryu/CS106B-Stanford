@@ -81,7 +81,6 @@ void buildEncodingMapHelper(Map<int, string>& encodingMap, HuffmanNode* node, st
 
 
 Map<int, string> buildEncodingMap(HuffmanNode* encodingTree) {
-    // TODO: implement this function
     Map<int, string> encodingMap;
     string binary = "";
 
@@ -92,11 +91,34 @@ Map<int, string> buildEncodingMap(HuffmanNode* encodingTree) {
 }
 
 void encodeData(istream& input, const Map<int, string>& encodingMap, obitstream& output) {
-    // TODO: implement this function
+    // Read file character by character
+    int c;
+    string encode = "";
+
+    while((c = input.get()) != EOF){
+        encode = encodingMap[c];
+
+        for(int i=0;i<encode.length();i++){
+            output.writeBit(stringToInteger(encode.substr(i, 1)));
+        }
+    }
+
+    // add code for EOF
+    encode = encodingMap[PSEUDO_EOF];
+    cout << encode;
+    for(int i=0;i<encode.length();i++){
+        output.writeBit(stringToInteger(encode.substr(i, 1)));
+    }
 }
 
 void decodeData(ibitstream& input, HuffmanNode* encodingTree, ostream& output) {
-    // TODO: implement this function
+    // Read file character by character
+    int c;
+    string  = "";
+    while((c = input.readBit()) != -1){
+
+    }
+
 }
 
 void compress(istream& input, obitstream& output) {
