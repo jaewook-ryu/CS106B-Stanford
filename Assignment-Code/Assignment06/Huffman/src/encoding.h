@@ -18,6 +18,7 @@
 #include "bitstream.h"
 #include "HuffmanNode.h"
 #include "map.h"
+#include "queue.h"
 using namespace std;
 
 /*
@@ -33,4 +34,6 @@ void compress(istream& input, obitstream& output);
 void decompress(ibitstream& input, ostream& output);
 void freeTree(HuffmanNode* node);
 
+// my functions
+void buildEncodingMapHelper(Map<int, string>& encodingMap, HuffmanNode* node, string& binary);
 #endif

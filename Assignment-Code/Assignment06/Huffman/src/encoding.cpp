@@ -62,10 +62,33 @@ HuffmanNode* buildEncodingTree(const Map<int, int>& freqTable) {
     return pq.front();
 }
 
+void buildEncodingMapHelper(Map<int, string>& encodingMap, HuffmanNode* node, string& binary){
+    // base case
+    if(node->isLeaf()){
+        encodingMap.add(node->character, binary);
+    } else{
+        // left traversal
+        binary += "0"; // choose
+        buildEncodingMapHelper(encodingMap, node->zero, binary);
+        binary = binary.substr(0, binary.length()-1); // unchoose
+
+        // right traversal
+        binary += "1"; // choose
+        buildEncodingMapHelper(encodingMap, node->one, binary);
+        binary = binary.substr(0, binary.length()-1); // unchoose
+    }
+}
+
+
 Map<int, string> buildEncodingMap(HuffmanNode* encodingTree) {
     // TODO: implement this function
-    Map<int, string> encodingMap;   // this is just a placeholder so it will compile
-    return encodingMap;             // this is just a placeholder so it will compile
+    Map<int, string> encodingMap;
+    string binary = "";
+
+    // call to recursive helper function
+    buildEncodingMapHelper(encodingMap, encodingTree, binary);
+
+    return encodingMap;
 }
 
 void encodeData(istream& input, const Map<int, string>& encodingMap, obitstream& output) {
