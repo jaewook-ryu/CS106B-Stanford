@@ -35,13 +35,31 @@ HuffmanNode* buildEncodingTree(const Map<int, int>& freqTable) {
         pq.enqueue(tempNode, freqTable[c]);
     }
 
-    cout << pq << endl;
+    /*
+    for(HuffmanNode* t : pq){
+        cout << t->character << " " << t->count << endl;
+    }
+    */
 
+    while(pq.size() >= 2){
+        // Remove two nodes from the beginning of the pq
+        HuffmanNode* node1 = pq.dequeue();
+        HuffmanNode* node2 = pq.dequeue();
 
+        // Join two nodes
+        HuffmanNode* node3 = new HuffmanNode();
+        node3->count = node1->count + node2->count;
 
+        // Place original nodes as children of new node
+        node3->zero = node1;
+        node3->one = node2;
 
+        // Re-insert into pq
+        pq.enqueue(node3, node3->count);
+    }
 
-    return NULL;   // this is just a placeholder so it will compile
+    // return the only node (which is in the front)
+    return pq.front();
 }
 
 Map<int, string> buildEncodingMap(HuffmanNode* encodingTree) {
