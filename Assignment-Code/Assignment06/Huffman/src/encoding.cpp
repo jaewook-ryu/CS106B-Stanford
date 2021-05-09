@@ -6,6 +6,7 @@
 #include "encoding.h"
 #include <iostream>
 #include "pqueue.h"
+#include "filelib.h"
 using namespace std;
 // TODO: include any other headers you need
 
@@ -117,7 +118,7 @@ void decodeData(ibitstream& input, HuffmanNode* encodingTree, ostream& output) {
     HuffmanNode* temp;
     temp = encodingTree;
 
-    string tempString = "";
+    //string tempString = "";
 
     while(true){
         if(temp->isLeaf()){
@@ -157,6 +158,7 @@ void decodeData(ibitstream& input, HuffmanNode* encodingTree, ostream& output) {
 void compress(istream& input, obitstream& output) {
     // Build Frequency Table
     Map<int, int> freqTable = buildFrequencyTable(input);
+    rewindStream(input);
 
     // Build encoding tree
     HuffmanNode* front = buildEncodingTree(freqTable);
@@ -181,6 +183,17 @@ void decompress(ibitstream& input, ostream& output) {
     decodeData(input, encodingTree, output);
 }
 
+void freeTreeHelper(HuffmanNode* node){
+    if(node->isLeaf()){
+        delete node;
+    } else{
+        HuffmanNode* temp = node;
+        delete node;
+        freeTreeHelper(temp->one);
+        freeTreeHelper(temp->zero);
+    }
+}
+
 void freeTree(HuffmanNode* node) {
-    // TODO: implement this function
+    freeTreeHelper(node);
 }
