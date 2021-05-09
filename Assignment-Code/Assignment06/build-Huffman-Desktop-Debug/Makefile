@@ -35,7 +35,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = Huffman1.0.0
-DISTDIR = /tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug/.tmp/Huffman1.0.0
+DISTDIR = /tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug/.tmp/Huffman1.0.0
 LINK          = g++
 LFLAGS        = -rdynamic -Wl,--export-dynamic
 LIBS          = $(SUBLIBS) -ldl -lpthread 
@@ -223,87 +223,87 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exceptions.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
-		../Huffman/Huffman.pro /tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/basicgraph.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/collections.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/dawglexicon.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/deque.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/graph.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/grid.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/hashcode.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/hashmap.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/hashset.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/lexicon.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/linkedhashmap.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/linkedhashset.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/linkedlist.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/map.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/pqueue.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/priorityqueue.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/queue.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/set.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/shuffle.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/sparsegrid.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/stack.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/stl.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/vector.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gbufferedimage.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gevents.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gfilechooser.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/ginteractors.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gobjects.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/goptionpane.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gtable.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gtextarea.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gtimer.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gtypes.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gwindow.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/base64.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/bitstream.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/console.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/filelib.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/plainconsole.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/server.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/simpio.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/tokenscanner.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/urlstream.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/consolestreambuf.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/echoinputstreambuf.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/foreachpatch.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/forwardingstreambuf.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/init.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/limitoutputstreambuf.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/platform.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/randompatch.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/static.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/tokenpatch.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/tplatform.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/version.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/system/call_stack.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/system/error.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/system/exceptions.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/system/process.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/system/pstream.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/system/stack_exception.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/system/thread.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/bigfloat.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/biginteger.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/complex.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/direction.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/foreach.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/gmath.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/note.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/observable.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/point.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/random.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/recursion.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/regexpr.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/sound.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/strlib.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/timer.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/src/encoding.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/src/HuffmanNode.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/src/huffmanutil.h \
-		/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/src/mymap.h ../Huffman/lib/StanfordCPPLib/collections/basicgraph.cpp \
+		../Huffman/Huffman.pro /tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/basicgraph.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/collections.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/dawglexicon.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/deque.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/graph.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/grid.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/hashcode.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/hashmap.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/hashset.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/lexicon.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/linkedhashmap.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/linkedhashset.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/linkedlist.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/map.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/pqueue.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/priorityqueue.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/queue.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/set.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/shuffle.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/sparsegrid.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/stack.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/stl.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/collections/vector.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gbufferedimage.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gevents.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gfilechooser.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/ginteractors.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gobjects.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/goptionpane.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gtable.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gtextarea.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gtimer.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gtypes.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/graphics/gwindow.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/base64.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/bitstream.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/console.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/filelib.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/plainconsole.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/server.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/simpio.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/tokenscanner.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/io/urlstream.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/consolestreambuf.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/echoinputstreambuf.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/foreachpatch.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/forwardingstreambuf.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/init.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/limitoutputstreambuf.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/platform.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/randompatch.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/static.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/tokenpatch.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/tplatform.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/private/version.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/system/call_stack.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/system/error.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/system/exceptions.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/system/process.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/system/pstream.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/system/stack_exception.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/system/thread.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/bigfloat.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/biginteger.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/complex.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/direction.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/foreach.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/gmath.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/note.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/observable.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/point.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/random.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/recursion.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/regexpr.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/sound.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/strlib.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/StanfordCPPLib/util/timer.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/src/encoding.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/src/HuffmanNode.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/src/huffmanutil.h \
+		/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/src/mymap.h ../Huffman/lib/StanfordCPPLib/collections/basicgraph.cpp \
 		../Huffman/lib/StanfordCPPLib/collections/dawglexicon.cpp \
 		../Huffman/lib/StanfordCPPLib/collections/hashcode.cpp \
 		../Huffman/lib/StanfordCPPLib/collections/lexicon.cpp \
@@ -534,57 +534,57 @@ distclean: clean
 ####### Sub-libraries
 
 copyResources:
-	cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/ababcab.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/ababcab.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/allcharsonce.dat" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/allcharsonce.dat" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/alphaonce.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/alphaonce.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/alphatwice.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/alphatwice.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/as.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/as.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/asciiart.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/asciiart.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/bender.jpg" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/bender.jpg" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/dictionary.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/dictionary.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/empty.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/empty.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/example.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/example.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/example2.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/example2.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/excellent.wav" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/excellent.wav" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/fibonacci.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/fibonacci.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/hamlet.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/hamlet.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/hellokitty.bmp" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/hellokitty.bmp" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/large.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/large.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/larger.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/larger.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/medium.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/medium.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/moo.wav" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/moo.wav" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/nonrepeated.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/nonrepeated.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/poem.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/poem.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/secretmessage.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/secretmessage.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/short.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/short.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/singlechar.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/singlechar.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/tomsawyer.txt" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/res/tomsawyer.txt" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
-	 cp -rf "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/spl.jar" "/tmp/guest-wbwcgh/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
+	 cp -rf "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/Huffman/lib/spl.jar" "/tmp/guest-y6dsre/Desktop/CS106B-Stanford/Assignment-Code/Assignment06/build-Huffman-Desktop-Debug" 
 	
 	
 
@@ -1339,7 +1339,10 @@ encoding.o: ../Huffman/src/encoding.cpp ../Huffman/src/encoding.h \
 		../Huffman/lib/StanfordCPPLib/util/random.h \
 		../Huffman/lib/StanfordCPPLib/util/strlib.h \
 		../Huffman/lib/StanfordCPPLib/collections/stack.h \
-		../Huffman/lib/StanfordCPPLib/collections/vector.h
+		../Huffman/lib/StanfordCPPLib/collections/vector.h \
+		../Huffman/lib/StanfordCPPLib/collections/queue.h \
+		../Huffman/lib/StanfordCPPLib/collections/pqueue.h \
+		../Huffman/lib/StanfordCPPLib/collections/priorityqueue.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o encoding.o ../Huffman/src/encoding.cpp
 
 huffmanmain.o: ../Huffman/src/huffmanmain.cpp ../Huffman/lib/StanfordCPPLib/io/console.h \
@@ -1359,6 +1362,7 @@ huffmanmain.o: ../Huffman/src/huffmanmain.cpp ../Huffman/lib/StanfordCPPLib/io/c
 		../Huffman/src/encoding.h \
 		../Huffman/lib/StanfordCPPLib/collections/map.h \
 		../Huffman/lib/StanfordCPPLib/collections/stack.h \
+		../Huffman/lib/StanfordCPPLib/collections/queue.h \
 		../Huffman/src/huffmanutil.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o huffmanmain.o ../Huffman/src/huffmanmain.cpp
 

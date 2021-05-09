@@ -128,8 +128,8 @@ void decodeData(ibitstream& input, HuffmanNode* encodingTree, ostream& output) {
                 output << char(temp->character);
                 temp = encodingTree;
 
-                cout << tempString << endl;
-                tempString = "";
+                //cout << tempString << endl;
+                //StempString = "";
             } else{
                 break;
             }
@@ -141,10 +141,10 @@ void decodeData(ibitstream& input, HuffmanNode* encodingTree, ostream& output) {
             // not a leaf: we need to traverse further.
             if(c == 1){
                 temp = temp->one;
-                tempString += "1";
+                //StempString += "1";
             } else if (c == 0){
                 temp = temp->zero;
-                tempString += "0";
+                //tempString += "0";
             } else if (c == -1){
                 break;
             } else{
@@ -155,11 +155,30 @@ void decodeData(ibitstream& input, HuffmanNode* encodingTree, ostream& output) {
 }
 
 void compress(istream& input, obitstream& output) {
-    // TODO: implement this function
+    // Build Frequency Table
+    Map<int, int> freqTable = buildFrequencyTable(input);
+
+    // Build encoding tree
+    HuffmanNode* front = buildEncodingTree(freqTable);
+
+    // Build encoding map
+    Map<int, string> encodingMap = buildEncodingMap(front);
+
+    // write encodingMap into output file as a header
+    output << freqTable;
+
+    // encode data
+    encodeData(input, encodingMap, output);
+
 }
 
 void decompress(ibitstream& input, ostream& output) {
-    // TODO: implement this function
+    Map<int, int> freqTable;
+    input >> freqTable;
+
+    HuffmanNode* encodingTree = buildEncodingTree(freqTable);
+
+    decodeData(input, encodingTree, output);
 }
 
 void freeTree(HuffmanNode* node) {
