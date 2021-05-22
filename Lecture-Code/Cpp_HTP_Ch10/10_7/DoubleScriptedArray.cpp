@@ -5,6 +5,28 @@
 #include <iomanip>
 using namespace std;
 
+ostream& operator<<(ostream& output, const DoubleScriptedArray& a){
+    for(int i=0;i<a.row;i++){
+        for(int j=0;j<a.col;j++){
+            output << a(i, j) << " ";
+        }
+        output << endl;
+    }
+
+    return output;
+}
+
+istream& operator>>(istream& input, DoubleScriptedArray& a){
+    for(int i=0;i<a.row;i++){
+        for(int j=0;j<a.col;j++){
+            input >> a(i, j);
+        }
+    }
+
+    return input;
+}
+
+
 DoubleScriptedArray::DoubleScriptedArray(int m, int n)
     : row{m}, col{n}, ptr{new int[m*n]}{
         /* empty body */
@@ -24,16 +46,30 @@ DoubleScriptedArray::~DoubleScriptedArray(){
     delete[] ptr;
 }
 
-size_t DoubleScriptedArray::getRowSize() const{
+int DoubleScriptedArray::getRowSize() const{
     return row;
 }
 
-size_t DoubleScriptedArray::getColSize() const{
+int DoubleScriptedArray::getColSize() const{
     return col;
 }
 
 const DoubleScriptedArray& DoubleScriptedArray::operator=(const DoubleScriptedArray& right){
-    
+    // self assignment?
+    if(&right != this){
+        if(col != right.col || row != right.row){
+            delete[] ptr;
+            col = right.col;
+            row = right.row;
+            ptr = new int[row*col];
+        }
+
+        for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                (*this)(i, j) = right(i, j);
+            }
+        }
+    }
 }
 
 bool DoubleScriptedArray::operator==(const DoubleScriptedArray& right) const{
