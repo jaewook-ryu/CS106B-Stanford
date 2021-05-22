@@ -10,8 +10,8 @@ class Complex{
         Complex(const Complex&);
 
         // operator overloading
-        Complex& operator+(const Complex&) const;
-        Complex& operator-(const Complex&) const;
+        Complex operator+(const Complex&) const;
+        Complex operator-(const Complex&) const;
         bool operator==(const Complex&) const;
         bool operator!=(const Complex& right) const{
             return !((*this) == right);

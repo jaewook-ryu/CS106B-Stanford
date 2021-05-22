@@ -10,7 +10,7 @@ Complex::Complex(const Complex& c){
     imag = c.imag;
 }
 
-Complex& Complex::operator+(const Complex& right) const{
+Complex Complex::operator+(const Complex& right) const{
     return Complex{real + right.real, imag + right.imag};
 }
 
