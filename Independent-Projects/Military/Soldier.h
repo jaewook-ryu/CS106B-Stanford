@@ -2,7 +2,7 @@
 
 class Soldier{
     public:
-        Soldier(std::string name, std::string StartDate);
+        Soldier(std::string, std::string);
         ~Soldier();
 
         std::string getName() const;
@@ -14,5 +14,7 @@ class Soldier{
         std::string startDate;
         std::string endDate;
 
-        void calculateEndDate();
+        string calculateEndDate();
+        void setStartDate(std::string);
+        void setEndDate();
 };
